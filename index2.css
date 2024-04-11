@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+.container{
+    margin-left: 40px;
+    max-height: 100vh;
+}
+.top{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.bottom{
+    display: flex;
+    margin-top: 40px;
+}
+.botl{
+    display: flex;
+    
+}
+.botr{
+    display: flex;
+}
+.botl img{
+    height: 200px;
+}
+.botr img{
+    height: 200px;
+}
+.textl{
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding: 30px 80px 0px 30px;
+    flex-wrap: wrap;
+}
+.textr{
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding: 30px 80px 0px 30px;
+    flex-wrap: wrap;
+}
+@media (max-width:700px){
+    .top{
+        flex-direction: column;
+        width: 95%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:700px){
+    .bottom{
+        flex-direction: column;
+        width: 95%;
+    }
+     
+}
+@media (max-width:700px){
+    .botl{
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 30px;
+        object-fit: cover;
+        
+    }
+    .img{
+        object-fit: cover;
+    }
+     
+}
+@media (max-width:700px){
+    .botr{
+        flex-direction: column;
+        width: 95%;
+        object-fit: cover;
+    }
+
+     
+}
+@media (max-width:1400px) and (min-width:700px){
+    .botr{
+        flex-direction: column;
+        width: 95%;
+        margin-right: 20px;
+        
+    }
+    .botl{
+        flex-direction: column;
+        width: 95%;
+        margin-right: 30px;
+    }
+
+     
+}
